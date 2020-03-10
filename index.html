@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>todo</title>
+    <link rel="stylesheet" href="https://unpkg.com/primitive-ui/dist/css/main.css" />
+    <!-- <link rel="stylesheet" href="styles/reset.css"> -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="small-container">
+        <h2>TODO</h2>
+        <form class="add-task">
+            <input id="item" type="text" placeholder="Бай милк" required autocomplete="off" class="task-name" />
+        </form>
+        <button class="deleteAllTask">удалить</button>
+    </div>
+    <div class="tasks">
+        <div class="task-container TODO-status ">
+            <p class="items-condition">todo</p>
+            <ul class="todo-items"></ul>
+            <div class="todo-items-block">
+                <div class="todo-items">
+                    <p class="todo-title">Buy Milk</p>
+                    <p class="x-mark" title="Удалить">&#10060;</p>
+                </div>
+                <select class="change-status">
+                    <option value="0">In progress</option>
+                    <option value="1">Done</option>
+                    <option value="2">Delete</option>
+                </select>
+            </div>
+        </div>
+        <div class="task-container  inProgress-status">
+            <p class="items-condition">In progress</p>
+
+        </div>
+        <div class="task-container Done-status">
+            <p class="items-condition">Done</p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
